@@ -1,0 +1,7 @@
+Langfuse é uma plataforma open source de observabilidade para aplicações com LLM. Ela registra traces, spans e generations, com latência, tokens e custo de cada chamada.
+
+O custo no Langfuse é inferido a partir de uma model definition com preço por token cadastrado. Para modelos locais sem preço cadastrado, o custo fica nulo.
+
+A integração com LangChain e LangGraph é feita por um CallbackHandler passado em config callbacks. O session_id é definido pela chave langfuse_session_id no metadata da execução.
+
+No Langfuse v4 em modo events_only, a leitura de dados é feita pela Observations API v2 em GET /api/public/v2/observations, e a ingestão pelo endpoint OTLP /api/public/otel/v1/traces.

@@ -1,0 +1,5 @@
+LangGraph é um framework para construir aplicações com agentes de LLM usando grafos de estado. Cada nó do grafo é uma função que recebe o estado e devolve atualizações, e as arestas definem a ordem de execução.
+
+O LangGraph permite checkpoints de memória, pontos de interrupção (breakpoints) para intervenção humana e time travel para reexecutar a partir de estados anteriores.
+
+LangChain fornece abstrações para modelos, prompts, parsers e ferramentas, e se integra ao LangGraph para orquestrar fluxos mais complexos.

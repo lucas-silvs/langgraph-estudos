@@ -1,0 +1,5 @@
+pgvector é uma extensão do PostgreSQL que adiciona o tipo vector e operadores de distância para busca por similaridade. O operador <=> calcula a distância de cosseno.
+
+Índices HNSW e IVFFlat aceleram a busca aproximada de vizinhos mais próximos. O HNSW costuma ter melhor recall e não exige treino prévio.
+
+Em um RAG, os documentos são divididos em trechos, cada trecho recebe um embedding, e na consulta os trechos mais próximos da pergunta são recuperados e enviados ao LLM como contexto.
